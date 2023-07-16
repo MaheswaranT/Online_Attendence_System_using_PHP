@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<title>Management Module</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="stylesheets/foundation.min.css">
+<link rel="stylesheet" href="stylesheets/main.css">
+<link rel="stylesheet" href="stylesheets/app.css">
+<script src="javascripts/modernizr.foundation.js"></script>
+<!-- Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">
+function valid()
+{
+	if(fm.rg.value=="stf0001"&&fm.pas.value=="stc")
+	
+	{
+		window.alert("Thanks For Logging" );
+return true;
+			
+	}
+else if(fm.rg.value=="stf002"&&fm.pas.value=="college")
+	{
+		window.alert("Thanks For Logging" );
+return true;
+			
+	}
+	else
+	   window.alert("Invalid Staff Login" );
+	 
+		return false;	
+}
+</script>
+
+</head>
+<body>
+<h3 align="center">An Integrated Website for School</h3>
+<div class="row page_wrap">
+  <!-- page wrap -->
+  <div class="twelve columns">
+    <!-- page wrap -->
+    <div class="row">
+      <div class="nine columns header_nav">
+        <ul id="menu-header" class="nav-bar horizontal">
+          <li><a href="index.html">Home</a></li>
+            <li class="has-flyout"><a href="student login.html">Student</a></li>
+              <li class="has-flyout"><a href="staff login.html">Faculty</a></li>
+              <li class="has-flyout"><a href="management login.html">Management</a></li>
+              <li class="has-flyout"><a href="candiate login.html">Sports</a></li>
+                       <li class="has-flyout"><a href="voting.html">Canteen</a></li>
+              <li class="has-flyout"><a href="facilities.html">Facilities</a></li>
+              <li class="has-flyout"><a href="extra.html">Extra Circular</a></li>
+              <li class="has-flyout"><a href="study.html">Study Material</a></li>
+          <li class="has-flyout"><a href="report.html">Report</a></li>
+        </ul>
+        </ul>
+        <script>$('ul#menu-header').nav-bar();</script>
+      </div>
+      <div class="three columns header_logo"></div>
+    </div>
+    <!-- END Header -->
+    <div class="show-for-large-up">
+      <div class="row">
+       <p align="center"><font size="+3"> Management Module</font></p>
+       </br></br>
+     
+<p align="center"><a href="view visitor.php"><font size="+6" color="#000000">Student Detail Report</font></a>
+<p align="center"><a href="view feedback.php"><font size="+6" color="#000000">Exercise Detail Report</font></a></p>
+<p align="center"><a href="view vechicle.php"><font size="+6" color="#000000">Faculty Detail Report</font></a></p>
+<p align="center"><a href="view result.php"><font size="+6" color="#000000">Canteen Bill Report</font></a>      </p>
+      </div>
+    </div>
+    <div class="row hide-for-small">
+      <div class="twelve columns">
+        
+      </div>
+    </div>
+    <!-- end row -->
+    <div class="row"></div>
+    <!-- end row -->
+    <hr/>
+    <div class="row" style="padding-top: 20px"></div>
+    <!-- end row -->
+    <div class="row"></div>
+    <script>$('ul#menu3').nav-bar();</script>
+  </div>
+</div>
+<!-- end page wrap) -->
+<!-- Included JS Files (Compressed) -->
+<script src="javascripts/foundation.min.js"></script>
+<!-- Initialize JS Plugins -->
+<script src="javascripts/app.js"></script>
+</body>
+</html>

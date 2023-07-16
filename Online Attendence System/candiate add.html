@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<title>Exercise Entry</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="stylesheets/foundation.min.css">
+<link rel="stylesheet" href="stylesheets/main.css">
+<link rel="stylesheet" href="stylesheets/app.css">
+<script src="javascripts/modernizr.foundation.js"></script>
+<!-- Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">
+function valid()
+{
+	if(fm.rg.value=="stf0001"&&fm.pas.value=="stc")
+	
+	{
+		window.alert("Thanks For Logging" );
+return true;
+			
+	}
+else if(fm.rg.value=="stf002"&&fm.pas.value=="college")
+	{
+		window.alert("Thanks For Logging" );
+return true;
+			
+	}
+	else
+	   window.alert("Invalid Staff Login" );
+	 
+		return false;	
+}
+</script>
+<script>
+//"Accept terms" form submission- By Dynamic Drive
+//For full source code and more DHTML scripts, visit http://www.dynamicdrive.com
+//This credit MUST stay intact for use
+var checkobj
+function agreesubmit(el){
+checkobj=el
+if (document.all||document.getElementById){
+for (i=0;i<checkobj.form.length;i++){  //hunt down submit button
+var tempobj=checkobj.form.elements[i]
+if(tempobj.type.toLowerCase()=="submit")
+tempobj.disabled=!checkobj.checked
+}
+}
+}
+function defaultagree(el){
+if (!document.all&&!document.getElementById){
+if (window.checkobj&&checkobj.checked)
+return true
+else{
+alert("Please read/accept terms to submit form")
+return false
+}
+}
+}
+</script>
+</head>
+<body>
+<h3 align="center">Online Attendence Management System</h3>
+<div class="row page_wrap">
+  <!-- page wrap -->
+  <div class="twelve columns">
+    <!-- page wrap -->
+    <div class="row">
+      <div class="nine columns header_nav">
+        <ul id="menu-header" class="nav-bar horizontal">
+          <li><a href="index.html">Home</a></li>
+           <li class="has-flyout"><a href="student login.html">Student</a></li>
+              <li class="has-flyout"><a href="staff login.html">Faculty</a></li>         
+              <li class="has-flyout"><a href="candiate login.html">Sports</a></li>                 
+          <li class="has-flyout"><a href="report.html">Report</a></li>
+        </ul>
+        </ul>
+        <script>$('ul#menu-header').nav-bar();</script>
+      </div>
+      <div class="three columns header_logo"></div>
+    </div>
+    <!-- END Header -->
+    <div class="show-for-large-up">
+      <div class="row">
+       <p align="center"><font size="+3"> Exercise Entry</font></p>
+       </br></br>
+     
+<form id="form1" name="p" method="post" action="fmy.php" onSubmit="onSubmit="return valid();return defaultagree(this)">
+ <p align="center" class="style2"><strong>Trainer Id</strong>
+   <input type="text" name="foliono" size="30" />
+</p>       
+<p align="center" class="style2"><strong>Exercise  Name </strong>
+  <input type="text" name="name" size="50" />
+  <strong>Exercise Type</strong>
+  <select id="ron" name="ron" >
+    <option value="Please Select">Please Select</option>
+    <option value="Internal">Internal</option>
+    <option value="External">External</option>
+     </select>
+</p>
+<p align="center" class="style2"><strong>Equipment Name
+    <input type="text" name="mno" size="35" />
+                Useful For
+                 <input type="text" name="em" size="60" />
+</strong></p>
+         
+
+<p align="center" class="style2"><strong>Exercise For
+    <textarea rows="8" cols="60" name="pa"  ></textarea>
+Exercise Explanation
+<textarea rows="8" cols="60" name="pea"  ></textarea>
+</strong><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;</strong></p>
+
+
+<p align="center" class="style2"><strong>Not Applicable For
+    <input type="text" name="place" size="60" />
+    Exercise Timing
+    <select id="date" name="date" >
+              <option value="Please Select">Please Select</option>
+              <option value="MORNING BEFORE BREAKFAST">MORNING BEFORE BREAKFAST</option>
+              <option value="MORNING AFTER BREAKFAST">MORNING AFTER BREAKFAST</option>
+                <option value="AFTERNOON BEFORE LUNCH">AFTERNOON BEFORE LUNCH</option>
+              <option value="AFTERNOON AFTER LUNCH">AFTERNOON AFTER LUNCH</option>
+              <option value="EVENING BEFORE SNACKS">EVENING BEFORE SNACKS</option>
+              <option value="EVENING BEFORE SNACKS">EVENING BEFORE SNACKS</option>
+             
+            </select>
+</strong></p>
+<p align="center" class="style2"></p>
+<p align="center">
+    
+<strong>
+<input name="agreecheck" type="checkbox" onClick="agreesubmit(this)">
+I Assure That Above Furnished Details Are Correc.<br>
+<input type="submit" name="Submit" value="Submit" disabled>
+<input type="reset" name="Submit2" value="Reset" />
+</strong>
+<script>
+//change two names below to your form's names
+document.forms.p.agreecheck.checked=false
+</script>
+       
+            
+
+<label></label>
+        </form>
+      </div>
+    </div>
+    <div class="row hide-for-small">
+      <div class="twelve columns">
+        
+      </div>
+    </div>
+    <!-- end row -->
+    <div class="row"></div>
+    <!-- end row -->
+    <hr/>
+    <div class="row" style="padding-top: 20px"></div>
+    <!-- end row -->
+    <div class="row"></div>
+    <script>$('ul#menu3').nav-bar();</script>
+  </div>
+</div>
+<!-- end page wrap) -->
+<!-- Included JS Files (Compressed) -->
+<script src="javascripts/foundation.min.js"></script>
+<!-- Initialize JS Plugins -->
+<script src="javascripts/app.js"></script>
+</body>
+</html>
